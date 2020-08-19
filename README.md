@@ -51,3 +51,24 @@ Variable Notes
 
 4. Age: Age is fractional if less than 1. 
 
+### Data Preprocessing
+ #Data Cleaning
+ The following lists the actions taken during this step;
+ 1. Data Correction
+ - Remove NULLS: drop embarked nulls since there are only 2
+ - Drop Columns: Cabin was dropped due to low data volume
+ 2. Data Completion
+ - Impute NULLS: Age used the mode in this case 4 minus the median = 24.
+ - Add Missing Columns: Disparities in factor level between train and test set lead to a need to harmonize the columns
+ 3. Data Convertion
+ - Normalize Fare: used log transformation for exponential distribution
+ - Create Dummy Variables: Convert factors to numeric type 
+ - Scale Variables: To mitigate issue of over effect from large numeric values the data was scaled to a standard distribution
+ -- Note: the unscaled data was also kept to produce models and determine the improvement, if any, from scaling the data
+
+ #Feature Engineering
+ 1. Parsed Passenger Title: Created a title feature from the passenger 'name' registry to track correlation of surival with passenger title
+ 2. Parsed Cabin letter: Created cabin_letter feature to see if a passengers cabin section correlates with survival
+
+
+
