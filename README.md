@@ -81,6 +81,51 @@ With the both sets of data cleaned with some features engineered, it was time to
 ![EDA_Box Table!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/box_pic.png)
 
 ### Data Model Building
-From the data exploration and pre-processing, we use a final scaled and unscaled training set to build our models. We built
+From the data exploration and pre-processing, we use a final scaled and unscaled training set to build our models. We built 11 models; 2 baseline models, 7 robust methods, followed by a final hard and soft voting ensemble. With a binary target variable, the survival prediction accuracy score served as our evaluation metric.
+
+Baseline Models:
+1. Gaussian Naive Bayes
+- Scaled Training Score: 72.11% 
+- Unscaled Training Set: 73.79%
+2. Classification Tree
+- Scaled Training Score: 79.41% 
+- Unscaled Training Set: 79.42%
+
+Robust Models:
+3. Logistic Regression
+- Scaled Training Score: 82.57% 
+- Unscaled Training Set: 82.46%
+4. Random Forest
+- Scaled Training Score: 81.78% 
+- Unscaled Training Set: 81.89%
+5. K-Nearest Neighbors
+- Scaled Training Score: 82.45% 
+- Unscaled Training Set: 81.11%
+6. Support Vector Classification
+- Scaled Training Score: 83.13% 
+- Unscaled Training Set: 82.23%
+7. AdaBoost Classifier
+- Scaled Training Score: 82.0% 
+- Unscaled Training Set: 82.0%
+8. Gradient Boost Classifier
+- Scaled Training Score: 82.79% 
+- Unscaled Training Set: 82.79%
+9. XGBoost Classifier
+- Scaled Training Score: 82.9% 
+- Unscaled Training Set: 82.9%
+
+Voting Classifiers:
+10. Soft Vote
+- Scaled Training Score: 83.46% 
+- Unscaled Training Set: 83.91%
+11. Hard Vote
+- Scaled Training Score: 84.25% 
+- Unscaled Training Set: 83.46%
+
+### Data Model Performance
+- The Soft Vote Ensemble produced the most accurate prediction at roughly 77%
+- In otherwords, for a randomized sample of 10 passengers we can expect our model to correctly predict the survival outcome of 7 or 8 passengers.
+- The accuracy score was determined by Kaggle's scoring system and returned after submitting the results of the soft voting ensemble.
+
 
 
