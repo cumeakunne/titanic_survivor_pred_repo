@@ -72,8 +72,15 @@ Variable Notes
 
 ### Data Exploration
 With the both sets of data cleaned with some features engineered, it was time to explore the data.
-- I first used .describe() to see the basic descriptive stats for central tendency and the overall dispersion of each fature.
+- I first used .describe() to see the basic descriptive stats for central tendency and the overall dispersion of each feature.
 - Then explored the continuous/discrete numeric variables using histograms, box-plots, and a correlation matrix/heatmap
 - Next we dove into the categorical variables using bar plots
 - Once I had a better sense of the distribution of each feature, I used pivot tables to compare them with the outcome variable 'Survived'
+![EDA Barplot!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/bar_pic.png)
+![EDA Heatmap!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/heatmap_pic.png)
+![EDA_Box Table!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/box_pic.png)
+
+### Data Model Building
+From the data exploration and pre-processing, we use a final scaled and unscaled training set to build our models. We built
+
 
