@@ -71,11 +71,13 @@ Variable Notes
  2. Parsed Cabin letter: Created cabin_letter feature to see if a passengers cabin section correlates with survival
 
 ### Data Exploration
-With the both sets of data cleaned with some features engineered, it was time to explore the data.
+With both sets of data cleaned with some features engineered, it was time to explore the data.
 - I first used .describe() to see the basic descriptive stats for central tendency and the overall dispersion of each feature.
 - Then explored the continuous/discrete numeric variables using histograms, box-plots, and a correlation matrix/heatmap
 - Next we dove into the categorical variables using bar plots
 - Once I had a better sense of the distribution of each feature, I used pivot tables to compare them with the outcome variable 'Survived'
+
+
 ![EDA Barplot!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/bar_pic.png)
 ![EDA Heatmap!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/heatmap_pic.png)
 ![EDA_Box Table!](https://github.com/cumeakunne/titanic_survivor_pred_repo/blob/master/box_pic.png)
